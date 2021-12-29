@@ -1,0 +1,591 @@
+:root {
+  --mainColor: #fb434b;
+  --fontdark: rgb(37, 37, 37);
+  --fontlight: #fff;
+  --accent: rgb(255, 252, 58);
+}
+
+@font-face {
+  font-family: "Hakuno";
+  src: url("../font/hakuno\ demo.ttf");
+}
+
+body {
+  min-height: 900px;
+  background-color: var(--mainColor);
+}
+
+.navbar {
+  height: 50px !important; /*i assume your navbar size 100px*/
+}
+
+.navbar-custom {
+  background: var(--accent);
+}
+
+.navbar h3 {
+  font-family: "Hakuno";
+  margin: 0;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--fontdark) !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: var(--fontdark) !important;
+  font-size: 1.5rem;
+}
+
+.remove-all-margin {
+  margin: 0 !important;
+}
+
+/* home section */
+
+#home {
+  color: var(--fontlight);
+  min-height: 100vh;
+}
+
+#home h2 {
+  font-family: "Potta One", cursive;
+  font-size: 1.7rem;
+}
+
+#home h1 {
+  font-family: "Hakuno";
+  font-size: 5rem;
+  margin: 0;
+}
+
+#home:after {
+  content: "";
+  background: url(../img/BG/clay-banks-hwLAI5lRhdM-unsplash.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: blur(2px);
+  filter: blur(2px) brightness(50%);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  right: 0px;
+  /* transform: scale(1.1); */
+  overflow: hidden;
+}
+
+.btn-custom1 {
+  background-color: var(--mainColor);
+  border: none;
+  color: var(--fontlight);
+  border-radius: 5px;
+  min-width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.btn-custom1:hover {
+  background-color: var(--fontlight);
+  color: var(--fontdark);
+}
+
+.btn-custom2 {
+  background-color: var(--accent);
+  color: var(--fontdark);
+  border: none;
+  border-radius: 5px;
+  min-width: 150px;
+  height: 50px;
+}
+
+.btn-custom2:hover {
+  background-color: var(--fontlight);
+  color: var(--fontdark);
+}
+
+.btn-home {
+  margin-top: 40px;
+}
+
+.content-home {
+  margin-top: -50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end home section */
+
+/* hour section */
+#working-hour {
+  color: #fff;
+  min-height: 150px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background: url(../img/assets/sakura.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: top left;
+  font-family: "Potta One", cursive;
+}
+
+.content-hour {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* hour section end */
+
+/* feature section */
+#feature {
+  overflow: hidden;
+}
+
+.featured-img1 {
+  background: url(../img/assets/sushi.jpg);
+  background-size: cover;
+}
+
+.featured-blank1 {
+  padding-inline: 100px;
+  padding-block: 100px;
+  text-align: justify;
+  background: #ef7e7e;
+  height: 400px;
+}
+
+.featured-img2 {
+  background: url(../img/assets/console.jpg);
+  background-size: cover;
+}
+
+.featured-blank2 {
+  background: #efeb7e;
+  text-align: justify;
+  padding-inline: 100px;
+  padding-block: 100px;
+  height: 400px;
+}
+
+.rest-icon {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: -240px;
+  border: var(--mainColor) solid 20px;
+  width: 200px;
+  z-index: 20;
+}
+
+.rest-icon2 {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 220px;
+  width: 70px;
+}
+
+.rest-icon3 {
+  position: absolute;
+  margin-top: -110px;
+  margin-left: 155px;
+  width: 50px;
+}
+
+.banner-icon1 {
+  position: absolute;
+  margin-left: 440px;
+  margin-top: -180px;
+  width: 300px;
+}
+
+.banner-icon2 {
+  position: absolute;
+  margin-top: -180px;
+  margin-left: -350px;
+  width: 240px;
+  transform: rotate(20deg);
+}
+
+/* feature section end */
+
+/* about section */
+#about {
+  padding-block: 50px;
+  margin-left: 50px;
+  color: var(--fontlight);
+}
+
+/* #about:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  background: url(../img/assets/main.png);
+  background-repeat: no-repeat;
+  background-position: 100px 0px;
+  background-size: 100%;
+  filter: opacity(30%);
+} */
+
+#about h1 {
+  font-size: 3rem;
+}
+
+/* end about section */
+
+/* menu section */
+#menu {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url(../img/assets/menu.png) var(--fontlight);
+  background-position: -130px -130px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+.content-menu {
+  margin-top: 50px;
+}
+
+.img-menu {
+  height: 400px;
+  overflow: hidden;
+}
+
+.inner-img {
+  transition: 0.3s;
+  margin-top: -50px;
+  display: block;
+  height: 400px;
+  transform: scale(1.9);
+}
+
+.inner-img:hover {
+  transform: scale(1.2);
+}
+
+.desc-menu {
+  height: 350px;
+  align-items: center;
+  text-align: center;
+  padding-block: 100px;
+}
+
+.menu-polygon {
+  width: 100px;
+  margin-top: -80px;
+  margin-left: -80px;
+  position: relative;
+}
+
+.menu-polygon2 {
+  width: 100px;
+  margin-top: -80px;
+  margin-left: 240px;
+  position: relative;
+  z-index: 99;
+  /* border: red 5px solid; */
+  transform: rotate(180deg);
+}
+
+/* end menu section */
+
+/* service section */
+#service {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--fontlight);
+  background: var(--mainColor) url(../img/assets/sakura.png);
+}
+
+/* end service section */
+
+.content-service {
+  margin-top: 50px;
+}
+
+/* lightbox */
+.content {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  margin-left: 20px;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.747);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  border-radius: 10px;
+}
+
+.content:hover .content-overlay {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details h1 {
+  font-size: 7rem;
+}
+
+.content-details p {
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.fadeIn-top {
+  left: 20%;
+}
+
+.card-1 {
+  background: url(../img/assets/cozy.jpg) center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.card-2 {
+  background: url(../img/assets/meal.jpg) center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.card-3 {
+  background: url(../img/assets/games.jpg) center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* lightbox end */
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 300px;
+  position: relative;
+  height: 0;
+}
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+
+footer {
+  color: var(--fontlight);
+}
+
+footer h1 {
+  font-family: "Hakuno";
+  font-size: 5rem;
+  margin: 0;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* display: block; */
+  width: 100%;
+  height: 600px;
+  background: url(../img/BG/jakub-dziubak-iOHJKJqO6E0-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--fontlight);
+  filter: blur(1px) brightness(20%);
+}
+
+.foot-head {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.foot-hour {
+  text-align: end;
+  margin-right: 20px;
+}
+
+.foot-desc {
+  border-right: 5px solid var(--fontlight);
+  border-left: 5px solid var(--fontlight);
+  border-radius: 3px;
+  height: 350px;
+  text-align: center;
+  padding-inline: 30px;
+}
+
+.foot-quick {
+  margin-left: 20px;
+  text-align: start;
+}
+
+.foot-quick a {
+  color: var(--fontlight);
+  line-height: 2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.foot-quick ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.soc-icon i {
+  color: var(--fontdark);
+  font-size: 1.5rem;
+}
+
+.soc-icon {
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.soc-item {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-inline: 10px;
+  background: var(--accent);
+}
+
+/* navbar autohide */
+.autohide {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.scrolled-down {
+  transform: translateY(-80%);
+  background-color: rgb(255, 252, 58) !important;
+  /* background-color: var(--mainColor) !important; */
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  background-color: rgb(255, 252, 58) !important;
+  /* background-color: var(--mainColor) !important; */
+  transition: all 0.3s ease-in-out;
+}
+/* navbar autohide end */
+
+/* sidenav */
+#wrapper {
+  padding-left: 0;
+  transition: all 0.5s ease;
+  position: relative;
+  margin-top: 0;
+  margin-top: -50px;
+}
+
+#sidebar-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  right: 250px;
+  width: 0;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: var(--accent);
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+.sidebar-nav {
+  margin-top: 50px;
+  position: absolute;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+.sidebar-nav > li {
+  text-indent: 10px;
+  line-height: 50px;
+}
+.sidebar-nav > li a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fontdark);
+  font-weight: bold;
+  font-size: 18px;
+}
+.sidebar-nav > li > a:hover,
+.sidebar-nav > li.active > a {
+  text-decoration: none;
+  color: var(--fontlight);
+  background: var(--mainColor);
+}
+
+#wrapper.toggled {
+  position: absolute;
+  margin-left: -250px;
+}
+
+/* sidenavend */
