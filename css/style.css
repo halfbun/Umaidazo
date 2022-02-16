@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-custom {
-  background: var(--accent);
+  background: var(--accent) !important;
 }
 
 .navbar h3 {
@@ -538,14 +538,14 @@ footer::before {
 
 .scrolled-down {
   transform: translateY(-80%);
-  background-color: rgb(255, 252, 58) !important;
+  /* background-color: rgb(255, 252, 58) !important; */
   /* background-color: var(--mainColor) !important; */
   transition: all 0.3s ease-in-out;
 }
 
 .scrolled-up {
   transform: translateY(0);
-  background-color: rgb(255, 252, 58) !important;
+  /* background-color: rgb(255, 252, 58) !important; */
   /* background-color: var(--mainColor) !important; */
   transition: all 0.3s ease-in-out;
 }
@@ -556,8 +556,7 @@ footer::before {
   padding-left: 0;
   transition: all 0.5s ease;
   position: relative;
-  margin-top: 0;
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 #sidebar-wrapper {
@@ -600,6 +599,7 @@ footer::before {
   color: var(--fontdark);
   font-weight: bold;
   font-size: 18px;
+  padding-block: 20px;
 }
 .sidebar-nav > li > a:hover,
 .sidebar-nav > li.active > a {
