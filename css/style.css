@@ -12,11 +12,11 @@
 
 body {
   min-height: 900px;
-  background-color: var(--mainColor);
+  background-color: var(--accent);
 }
 
 .navbar {
-  height: 50px !important; /*i assume your navbar size 100px*/
+  height: 70px !important; /*i assume your navbar size 100px*/
 }
 
 .navbar-custom {
@@ -29,15 +29,16 @@ body {
   font-weight: bold;
 }
 
-.nav-link {
+.nav-link i {
   color: var(--fontdark) !important;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: bold;
 }
 
-.navbar-brand {
+.navbar-brand h3 {
   color: var(--fontdark) !important;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .remove-all-margin {
@@ -124,7 +125,7 @@ body {
 
 /* hour section */
 #working-hour {
-  color: #fff;
+  color: var(--fontdark);
   min-height: 150px;
   padding-top: 100px;
   padding-bottom: 150px;
@@ -156,7 +157,7 @@ body {
   padding-inline: 100px;
   padding-block: 100px;
   text-align: justify;
-  background: #ef7e7e;
+  background: #ff7a7a;
   height: 400px;
 }
 
@@ -178,7 +179,7 @@ body {
   position: relative;
   margin-top: 50px;
   margin-bottom: -240px;
-  border: var(--mainColor) solid 20px;
+  border: var(--accent) solid 20px;
   width: 200px;
   z-index: 20;
 }
@@ -199,14 +200,14 @@ body {
 
 .banner-icon1 {
   position: absolute;
-  margin-left: 440px;
+  margin-left: 500px;
   margin-top: -180px;
   width: 300px;
 }
 
 .banner-icon2 {
   position: absolute;
-  margin-top: -180px;
+  margin-top: -120px;
   margin-left: -350px;
   width: 240px;
   transform: rotate(20deg);
@@ -217,8 +218,16 @@ body {
 /* about section */
 #about {
   padding-block: 50px;
-  margin-left: 50px;
-  color: var(--fontlight);
+  color: var(--fontdark);
+}
+
+#about h1 {
+  font-family: "Potta One", cursive;
+  font-size: 2.5rem !important;
+}
+
+#about p {
+  text-align: justify;
 }
 
 /* #about:before {
@@ -245,13 +254,18 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   background: url(../img/assets/menu.png) var(--fontlight);
-  background-position: -130px -130px;
+  background-position: -130px -300px;
   background-repeat: no-repeat;
   background-size: 20%;
 }
 
-.content-menu {
-  margin-top: 50px;
+#menu h1 {
+  font-family: "Potta One", cursive;
+}
+
+#menu:hover {
+  background-position: -130px -130px;
+  transition: all 0.7s ease-in-out;
 }
 
 .img-menu {
@@ -264,11 +278,11 @@ body {
   margin-top: -50px;
   display: block;
   height: 400px;
-  transform: scale(1.9);
+  transform: scale(1.3);
 }
 
 .inner-img:hover {
-  transform: scale(1.2);
+  transform: scale(1.9);
 }
 
 .desc-menu {
@@ -280,15 +294,15 @@ body {
 
 .menu-polygon {
   width: 100px;
-  margin-top: -80px;
-  margin-left: -80px;
+  margin-top: -60px;
+  margin-left: -75px;
   position: relative;
 }
 
 .menu-polygon2 {
   width: 100px;
-  margin-top: -80px;
-  margin-left: 240px;
+  margin-top: -70px;
+  margin-left: 280px;
   position: relative;
   z-index: 99;
   /* border: red 5px solid; */
@@ -301,8 +315,13 @@ body {
 #service {
   padding-top: 50px;
   padding-bottom: 50px;
-  color: var(--fontlight);
-  background: var(--mainColor) url(../img/assets/sakura.png);
+  color: var(--fontdark);
+  background: var(--accent) url(../img/assets/sakura.png);
+}
+
+#service h1 {
+  color: var(--fontdark);
+  font-family: "Potta One", cursive;
 }
 
 /* end service section */
@@ -311,12 +330,18 @@ body {
   margin-top: 50px;
 }
 
+#service .content-service h1 {
+  font-family: "Potta One", cursive;
+  color: var(--fontlight);
+}
+
 /* lightbox */
 .content {
   position: relative;
   overflow: hidden;
   height: 600px;
   margin-left: 20px;
+  padding-inline: 30px;
 }
 
 .content .content-overlay {
