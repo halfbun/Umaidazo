@@ -82,6 +82,11 @@
     padding-block: 30px;
     height: 180px;
   }
+
+  .desc-menu p {
+    font-size: 0.8rem;
+  }
+
   .inner-img {
     transform: scale(1.6);
   }
@@ -115,7 +120,7 @@
   }
 
   .featured-blank1 p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .featured-blank1 {
@@ -129,7 +134,7 @@
   }
 
   .featured-blank2 p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .featured-blank2 {
